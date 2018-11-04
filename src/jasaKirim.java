@@ -12,9 +12,7 @@ public class jasaKirim {
     private String namaPerusahaan;
     private int biayaKirim;
 
-    public jasaKirim(String namaPerusahaan, int biayaKirim) {
-        this.namaPerusahaan = namaPerusahaan;
-        this.biayaKirim = biayaKirim;
+    public jasaKirim() {
     }
 
     public String getNamaPerusahaan() {
@@ -32,8 +30,8 @@ public class jasaKirim {
     public void setBiayaKirim(int biayaKirim) {
         this.biayaKirim = biayaKirim;
     }
-    
-    public int biayaKirim(int biaya){
-        return biaya;
+
+    public int biayaKirim(int hari){
+        return hari * biayaKirim;
     }
 }

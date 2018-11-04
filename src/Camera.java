@@ -12,9 +12,7 @@ public class Camera {
     private String nama;
     private int biaya;
 
-    public Camera(String nama, int biaya) {
-        this.nama = nama;
-        this.biaya = biaya;
+    public Camera() {
     }
 
     public String getNama() {
@@ -24,7 +22,7 @@ public class Camera {
     public void setNama(String nama) {
         this.nama = nama;
     }
-    
+
     public int getBiaya() {
         return biaya;
     }
@@ -33,7 +31,7 @@ public class Camera {
         this.biaya = biaya;
     }
     
-    public int biayaSewa (int hari){
-        return biaya * hari;
+    public int biayaSewa(int hari){
+        return hari * biaya;
     }
 }

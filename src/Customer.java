@@ -13,14 +13,9 @@ public class Customer {
     private  Camera kamera;
     private  jasaKirim jasa;
     private  int hari;
-    private  int biaya;
 
-    public Customer(String nama, Camera kamera, jasaKirim jasa, int hari, int biaya) {
-        this.nama = nama;
-        this.kamera = kamera;
-        this.jasa = jasa;
-        this.hari = hari;
-        this.biaya = biaya;
+    public Customer() {
+
     }
 
     public String getNama() {
@@ -54,16 +49,8 @@ public class Customer {
     public void setHari(int hari) {
         this.hari = hari;
     }
-
-    public int getBiaya() {
-        return biaya;
-    }
-
-    public void setBiaya(int biaya) {
-        this.biaya = biaya;
-    }
     
     public int totalBiaya(){
-        return kamera.biayaSewa(hari) + jasa.biayaKirim(biaya);
+        return kamera.biayaSewa(hari) + jasa.biayaKirim(hari);
     }
 }
