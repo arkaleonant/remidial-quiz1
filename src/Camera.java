@@ -24,7 +24,7 @@ public class Camera {
     public void setNama(String nama) {
         this.nama = nama;
     }
-
+    
     public int getBiaya() {
         return biaya;
     }
